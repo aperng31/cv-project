@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { FullName, Location, Contact } from './info-pub.js'
 import './info.css'
-import check from './img/check.png';
-import pencil from './img/pencil.png';
 
 class Info extends React.Component {
     constructor() {

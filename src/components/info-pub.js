@@ -1,39 +1,6 @@
 import React from 'react';
 import './info.css'
 
-class InfoPub extends React.Component {
-    constructor(props) {
-        super(props);
-
-    } 
-    render() {
-        return (
-            <div id="info_pub" style={{ display: 'none' }}>
-                <div>
-                    { this.props.props.fullname }
-                </div>
-                <div>
-                    { this.props.props.address } &nbsp;
-                    { this.props.props.city } &nbsp;
-                    { this.props.props.state } 
-                </div>
-                <div>
-                    { this.props.props.number }
-                </div>
-                <div>
-                    { this.props.props.email }  
-                
-                </div>
-                
-                <button id="edit_button" onClick={ this.props.edit }>Edit</button>
-
-
-            </div>
-
-        )
-    }
-}
-
 class FullName extends React.Component {
     render() {
         return (
@@ -65,7 +32,4 @@ function Contact(props) {
     )
 }
 
-
-
-export default InfoPub;
 export { FullName, Location, Contact }
