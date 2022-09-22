@@ -4,11 +4,13 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Info from './components/info.js';
+import Education from './components/education.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Info />
+    <Education />
   </React.StrictMode>
 );
 

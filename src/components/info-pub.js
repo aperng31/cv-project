@@ -15,7 +15,7 @@ function Location(props) {
     return (
         <div className="info_pub">
             { props.props.address }&nbsp;
-            { props.props.city + ','}&nbsp;
+            { props.props.city }&nbsp;
             { props.props.state } 
         </div>
     )
@@ -26,7 +26,7 @@ function Contact(props) {
     phone = phone.replace(/(\d{3})(\d{3})(\d{4})/,"($1)$2-$3");
     return (
         <div className="info_pub">
-            { phone + ' -'}&nbsp;
+            { phone }&nbsp;
             { props.props.email }
         </div>
     )
