@@ -102,9 +102,10 @@ class Education extends React.Component {
                     </div>
 
                     <div className="edu_right">
-                        <div id="div_schoolLoc">
-                            <input className="edu_form" id="city" type="text" name="city" placeholder='Ipsumville' required></input>
-                            <input className="edu_form" id="state" type="text" name="state" placeholder='CA' maxLength="2" style={{ width: '20px' }} required
+                        <div id="div_schoolLoc" className='div_Loc'>
+                            <label>City, State: </label>
+                            <input className="edu_form" id="edu_city" type="text" name="city" placeholder='Ipsumville' required></input>
+                            <input className="edu_form" id="edu_state" type="text" name="state" placeholder='CA' maxLength="2" style={{ width: '24px' }} required
                                 onKeyPress={(event) => {
                                     if (!/[A-z]/.test(event.key)) {
                                     event.preventDefault();
@@ -116,6 +117,7 @@ class Education extends React.Component {
                         </div>
 
                         <div id="div_graduated">
+                            <label>Graduated: </label>
                             <input className="edu_form" id="graduated" type="month" name="graduated" required>
 
                             </input>
@@ -123,7 +125,7 @@ class Education extends React.Component {
                         </div>
                     </div>
                     
-                    <button id="edu_submit" className='edu_button' type="submit" style={{right: '10px', top: '10px'}}></button>
+                    <button id="edu_submit" className='edu_button' type="submit" style={{right: '10px', top: '25%'}}></button>
 
                     {/* <button id="edu_submit" type="submit" value="Submit"></button> */}
                     {/* <input type="button" alt="pencil" id="info_edit" className="submit_edit" style={{display: 'none'}} onClick={ this.editForm }></input> */}

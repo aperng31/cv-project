@@ -63,8 +63,8 @@ class Info extends React.Component {
 
                     <div id="div_location">
                         <input className="info_form" id="address" type="text" name="address" placeholder='1234 Main Ave' style={{ width: '200px' }} required></input>
-                        <input className="info_form" id="city" type="city" name="city" placeholder='Ipsumville' required></input>
-                        <input className="info_form" id="state" type="text" name="state" placeholder='CA' maxLength="2" style={{ width: '20px' }} required
+                        <input className="info_form" id="info_city" type="city" name="city" placeholder='Ipsumville' required></input>
+                        <input className="info_form" id="info_state" type="text" name="state" placeholder='CA' maxLength="2" style={{ width: '24px' }} required
                             onKeyPress={(event) => {
                                 if (!/[A-z]/.test(event.key)) {
                                 event.preventDefault();
