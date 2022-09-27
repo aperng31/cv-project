@@ -18,14 +18,6 @@
     border-radius: 4px;
 }
 
-#info_submit {
-    background: url('./img/check.png')
-}
-
-#info_edit {
-    background: url('./img/pencil.png')
-}
-
 hr {
     width: 100%;
     margin: 0;

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { FullName, Location, Contact } from './info-pub.js'
 import './info.css'
 
@@ -44,7 +43,6 @@ class Info extends React.Component {
         info_form.forEach((node) => node.hidden = false)
         const info_pub = document.querySelectorAll('.info_pub');
         info_pub.forEach((node) => node.hidden = true);
-        console.log('edit');
 
         const info_submit = document.querySelector('#info_submit');
         info_submit.style.display = 'block';
@@ -88,8 +86,8 @@ class Info extends React.Component {
 
                         <Contact props={ this.state } />
                     </div>
-                    <button id="info_submit" className="submit_edit" type="submit" value="Submit"></button>
-                    <input type="button" alt="pencil" id="info_edit" className="submit_edit" style={{display: 'none'}} onClick={ this.editForm }></input>
+                    <button id="info_submit" className="edu_button submit_button" type="submit" style={{top: '25%', right: '10px'}} value="Submit"></button>
+                    <input type="button" alt="pencil" id="info_edit" className="edu_button edit_button" style={{top: '25%', right: '10px', display: 'none'}} onClick={ this.editForm }></input>
                     <hr></hr>
                 </form>
             </div>

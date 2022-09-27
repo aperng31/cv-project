@@ -1,4 +1,4 @@
-#edu_main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,7 @@
     padding-top: 8px;
 }
 
-#edu_header {
+.main_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,10 +16,10 @@
     position: relative;
 }
 
-#edu_header > h2 {
+.main_header > h2 {
     margin: 0 0 0 10px;
 }
-#edu_header > button { 
+.main_header > button { 
     height: 26px;
     width: 26px;
     margin-right: 10px;
@@ -27,17 +27,17 @@
     border: 1px solid black;
 }
 
-#form2 {
+#edu_form_main, #work_form_main {
     width: 60%;
     position: relative;
     margin-top: 10px;
+    height: fit-content;
 }
 
 .edu_left {
     display: flex;
     flex-direction: column;
     width: 30%;
-    border: 1px solid blue;
 }
 
 .edu_right {
@@ -46,49 +46,49 @@
     top: 0px;
     width: 60%;
     min-width: max-content;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.div_Loc {
-    display: flex;
-    gap: 5px;
+    height: 50px;
 }
 
 .edu_button {
     position: absolute;
-
     height: 26px;
     width: 26px;
     border-radius: 4px;
     border: 1px solid black;
 }
 
-#edu_pub_main, #work_pub_main {
+.pub_container {
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+.pub_main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+}
+
 .edu_pub {
     position: relative;
-    height: 60px;
-
-    border: 1px dashed lightblue;
+    min-height: 54px;
 }
 
-#edit_edu {
+.edit_button {
     background: url('./img/pencil.png');
 }
-#delete_edu {
+.delete_button {
     background: url('./img/trash-can.png')
 }
-#edu_submit {
+.submit_button {
+    right: 10px;
+    top: 25%;
     background: url('./img/check.png')
 }
-#edu_toggle_form {
+.toggle_button {
     background: url('./img/plus-circle.png');
 }
